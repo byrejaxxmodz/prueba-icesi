@@ -1,0 +1,220 @@
+<svg viewBox="0 0 1400 1090" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="arrow-dark" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#334155"/>
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#7e22ce"/>
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b45309"/>
+    </marker>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1400" height="1090" fill="#ffffff"/>
+
+  <text x="700" y="26" text-anchor="middle" font-size="20" font-weight="700" fill="#0f172a">Vista 360° del Estudiante — Arquitectura de la solución</text>
+
+  <!-- ZONES -->
+  <g font-size="12" font-weight="700" fill="#64748b">
+    <rect x="40" y="40" width="1320" height="90" rx="10" fill="#eef2ff" stroke="#c7d2fe" stroke-dasharray="5,3"/>
+    <text x="56" y="58">CLIENTES</text>
+
+    <rect x="40" y="150" width="1320" height="85" rx="10" fill="#ecfdf5" stroke="#a7f3d0" stroke-dasharray="5,3"/>
+    <text x="56" y="168">VISTA 360 · PRESENTACIÓN (NUEVO)</text>
+
+    <rect x="40" y="250" width="1320" height="235" rx="10" fill="#ecfdf5" stroke="#a7f3d0" stroke-dasharray="5,3"/>
+    <text x="56" y="268">VISTA 360 · BACKEND (NUEVO)</text>
+
+    <rect x="40" y="500" width="1320" height="95" rx="10" fill="#fff7ed" stroke="#fed7aa" stroke-dasharray="5,3"/>
+    <text x="56" y="518">CAPA DE INTEGRACIÓN (NUEVO)</text>
+
+    <rect x="40" y="610" width="1320" height="115" rx="10" fill="#eff6ff" stroke="#bfdbfe" stroke-dasharray="5,3"/>
+    <text x="56" y="628">ECOSISTEMA ACTUAL (EXISTENTE — SE ASUME QUE EXPONE ALGUNA API O ACCESO DE LECTURA)</text>
+
+    <rect x="40" y="745" width="1320" height="225" rx="10" fill="#fdf4ff" stroke="#f5d0fe" stroke-dasharray="5,3"/>
+    <text x="56" y="763">COMUNICACIÓN ASÍNCRONA Y ANALÍTICA</text>
+  </g>
+
+  <!-- BOX STYLE HELPER (repeated manually) -->
+  <!-- Clientes -->
+  <g>
+    <rect x="300" y="68" width="260" height="50" rx="8" fill="#ffffff" stroke="#4338ca" stroke-width="1.5"/>
+    <text x="430" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#1e1b4b">Estudiante</text>
+
+    <rect x="850" y="68" width="300" height="50" rx="8" fill="#ffffff" stroke="#4338ca" stroke-width="1.5"/>
+    <text x="1000" y="93" text-anchor="middle" font-size="13" font-weight="700" fill="#1e1b4b">Equipo de Acompañamiento</text>
+    <text x="1000" y="108" text-anchor="middle" font-size="10" fill="#4338ca">consulta y registra info. de sus estudiantes</text>
+  </g>
+
+  <!-- Frontend -->
+  <g>
+    <rect x="430" y="185" width="540" height="50" rx="8" fill="#ffffff" stroke="#047857" stroke-width="1.5"/>
+    <text x="700" y="207" text-anchor="middle" font-size="13" font-weight="700" fill="#064e3b">Frontend Vista 360 (SPA)</text>
+    <text x="700" y="222" text-anchor="middle" font-size="10" fill="#047857">UI adaptada por rol (estudiante / acompañamiento)</text>
+  </g>
+
+  <!-- Backend -->
+  <g>
+    <rect x="430" y="278" width="540" height="55" rx="8" fill="#ffffff" stroke="#047857" stroke-width="1.5"/>
+    <text x="700" y="300" text-anchor="middle" font-size="13" font-weight="700" fill="#064e3b">API Gateway / BFF</text>
+    <text x="700" y="316" text-anchor="middle" font-size="10" fill="#047857">valida JWT, enruta, agrega respuestas para el frontend</text>
+
+    <rect x="200" y="370" width="430" height="60" rx="8" fill="#ffffff" stroke="#047857" stroke-width="1.5"/>
+    <text x="415" y="393" text-anchor="middle" font-size="13" font-weight="700" fill="#064e3b">Servicio de Agregación</text>
+    <text x="415" y="408" text-anchor="middle" font-size="10" fill="#047857">(Vista 360 Core) orquesta y cachea consultas a fuentes</text>
+    <text x="415" y="421" text-anchor="middle" font-size="10" fill="#047857">personal · académico · financiero · campus</text>
+
+    <rect x="690" y="370" width="430" height="60" rx="8" fill="#ffffff" stroke="#047857" stroke-width="1.5"/>
+    <text x="905" y="393" text-anchor="middle" font-size="13" font-weight="700" fill="#064e3b">Servicio de Acompañamiento</text>
+    <text x="905" y="408" text-anchor="middle" font-size="10" fill="#047857">reportes, alertas y solicitudes (dominio nuevo,</text>
+    <text x="905" y="421" text-anchor="middle" font-size="10" fill="#047857">no existe hoy en ningún sistema)</text>
+  </g>
+
+  <!-- Integración -->
+  <g>
+    <rect x="200" y="525" width="430" height="50" rx="8" fill="#ffffff" stroke="#c2410c" stroke-width="1.5"/>
+    <text x="415" y="547" text-anchor="middle" font-size="13" font-weight="700" fill="#7c2d12">Adaptadores / Anti-Corruption Layer</text>
+    <text x="415" y="562" text-anchor="middle" font-size="10" fill="#c2410c">un adaptador por sistema fuente</text>
+
+    <rect x="690" y="525" width="430" height="50" rx="8" fill="#ffffff" stroke="#047857" stroke-width="1.5"/>
+    <text x="905" y="547" text-anchor="middle" font-size="13" font-weight="700" fill="#064e3b">BD Acompañamiento (PostgreSQL)</text>
+    <text x="905" y="562" text-anchor="middle" font-size="10" fill="#047857">única fuente de verdad de reportes/alertas/solicitudes</text>
+  </g>
+
+  <!-- Ecosistema -->
+  <g>
+    <rect x="70" y="650" width="300" height="60" rx="8" fill="#ffffff" stroke="#1d4ed8" stroke-width="1.5"/>
+    <text x="220" y="675" text-anchor="middle" font-size="12" font-weight="700" fill="#1e3a8a">Sistema Académico (SIS)</text>
+    <text x="220" y="691" text-anchor="middle" font-size="10" fill="#1d4ed8">fuente: matrícula, notas, condición académica</text>
+
+    <rect x="390" y="650" width="300" height="60" rx="8" fill="#ffffff" stroke="#1d4ed8" stroke-width="1.5"/>
+    <text x="540" y="675" text-anchor="middle" font-size="12" font-weight="700" fill="#1e3a8a">Sistema Financiero (ERP)</text>
+    <text x="540" y="691" text-anchor="middle" font-size="10" fill="#1d4ed8">fuente: estado de cuenta, pagos, becas</text>
+
+    <rect x="710" y="650" width="300" height="60" rx="8" fill="#ffffff" stroke="#1d4ed8" stroke-width="1.5"/>
+    <text x="860" y="675" text-anchor="middle" font-size="12" font-weight="700" fill="#1e3a8a">Campus Virtual (LMS)</text>
+    <text x="860" y="691" text-anchor="middle" font-size="10" fill="#1d4ed8">fuente: actividad e indicadores de uso</text>
+
+    <rect x="1030" y="650" width="300" height="60" rx="8" fill="#ffffff" stroke="#1d4ed8" stroke-width="1.5"/>
+    <text x="1180" y="675" text-anchor="middle" font-size="12" font-weight="700" fill="#1e3a8a">Directorio / IdP Institucional</text>
+    <text x="1180" y="691" text-anchor="middle" font-size="10" fill="#1d4ed8">fuente: identidad, roles, SSO (OIDC/SAML)</text>
+  </g>
+
+  <!-- Async -->
+  <g>
+    <rect x="430" y="792" width="540" height="55" rx="8" fill="#ffffff" stroke="#7e22ce" stroke-width="1.5"/>
+    <text x="700" y="814" text-anchor="middle" font-size="13" font-weight="700" fill="#581c87">Event Bus (Kafka / RabbitMQ)</text>
+    <text x="700" y="830" text-anchor="middle" font-size="10" fill="#7e22ce">eventos de dominio: alerta creada, condición académica cambiada</text>
+
+    <rect x="200" y="895" width="380" height="60" rx="8" fill="#ffffff" stroke="#7e22ce" stroke-width="1.5"/>
+    <text x="390" y="920" text-anchor="middle" font-size="13" font-weight="700" fill="#581c87">Data Warehouse</text>
+    <text x="390" y="936" text-anchor="middle" font-size="10" fill="#7e22ce">modelos de analítica institucional</text>
+
+    <rect x="780" y="895" width="440" height="60" rx="8" fill="#ffffff" stroke="#7e22ce" stroke-width="1.5"/>
+    <text x="1000" y="920" text-anchor="middle" font-size="13" font-weight="700" fill="#581c87">Otros Procesos</text>
+    <text x="1000" y="936" text-anchor="middle" font-size="10" fill="#7e22ce">notificaciones, CRM académico, intervención temprana</text>
+  </g>
+
+  <!-- ARROWS: sync -->
+  <g stroke="#334155" stroke-width="2" fill="none" marker-end="url(#arrow-dark)">
+    <path d="M430,118 L680,183"/>
+    <path d="M1000,118 L720,183"/>
+    <path d="M700,235 L700,276"/>
+    <path d="M600,333 L450,368"/>
+    <path d="M800,333 L870,368"/>
+    <path d="M415,430 L415,523"/>
+    <path d="M905,430 L905,523"/>
+    <path d="M370,565 L230,648"/>
+    <path d="M420,575 L530,648"/>
+    <path d="M480,565 L830,648"/>
+  </g>
+  <g font-size="10" fill="#334155">
+    <rect x="500" y="150" width="140" height="14" fill="#ffffff" opacity="0.85"/>
+    <text x="570" y="161" text-anchor="middle">HTTPS (login vía SSO)</text>
+
+    <rect x="640" y="245" width="160" height="14" fill="#ffffff" opacity="0.85"/>
+    <text x="720" y="256" text-anchor="middle">REST/JSON + Bearer JWT</text>
+
+    <rect x="470" y="343" width="120" height="14" fill="#ffffff" opacity="0.85"/>
+    <text x="530" y="354" text-anchor="middle">REST interno</text>
+
+    <rect x="790" y="343" width="120" height="14" fill="#ffffff" opacity="0.85"/>
+    <text x="850" y="354" text-anchor="middle">REST interno</text>
+
+    <rect x="345" y="465" width="150" height="14" fill="#ffffff" opacity="0.85"/>
+    <text x="420" y="476" text-anchor="middle">consulta (cache corta)</text>
+
+    <rect x="835" y="465" width="140" height="14" fill="#ffffff" opacity="0.85"/>
+    <text x="905" y="476" text-anchor="middle">SQL lectura/escritura</text>
+
+    <rect x="180" y="600" width="150" height="14" fill="#ffffff" opacity="0.85"/>
+    <text x="255" y="611" text-anchor="middle">API: materias y notas</text>
+
+    <rect x="440" y="600" width="140" height="14" fill="#ffffff" opacity="0.85"/>
+    <text x="510" y="611" text-anchor="middle">API: financiero</text>
+
+    <rect x="620" y="600" width="150" height="14" fill="#ffffff" opacity="0.85"/>
+    <text x="695" y="611" text-anchor="middle">API: actividad LMS</text>
+  </g>
+
+  <!-- ARROWS: auth validation (amber dashed) -->
+  <g stroke="#b45309" stroke-width="1.5" fill="none" stroke-dasharray="4,4" marker-end="url(#arrow-amber)">
+    <path d="M970,305 C1150,340 1230,500 1180,648"/>
+  </g>
+  <g font-size="10" fill="#b45309">
+    <rect x="1085" y="470" width="150" height="14" fill="#ffffff" opacity="0.85"/>
+    <text x="1160" y="481" text-anchor="middle">valida token (OIDC)</text>
+  </g>
+
+  <!-- ARROWS: async (purple dashed) -->
+  <g stroke="#7e22ce" stroke-width="2" fill="none" stroke-dasharray="6,4" marker-end="url(#arrow-purple)">
+    <path d="M1050,430 C1150,550 1050,700 830,808"/>
+    <path d="M250,710 C300,750 450,780 560,802"/>
+    <path d="M620,835 C520,860 470,875 420,893"/>
+    <path d="M780,835 C880,860 930,875 980,893"/>
+  </g>
+  <g font-size="10" fill="#7e22ce">
+    <rect x="1020" y="560" width="190" height="14" fill="#ffffff" opacity="0.85"/>
+    <text x="1115" y="571" text-anchor="middle">publica evento (alerta/reporte)</text>
+
+    <rect x="280" y="745" width="230" height="14" fill="#ffffff" opacity="0.85"/>
+    <text x="395" y="756" text-anchor="middle">publica evento (cambio condición académica)</text>
+
+    <rect x="440" y="860" width="150" height="14" fill="#ffffff" opacity="0.85"/>
+    <text x="515" y="871" text-anchor="middle">consume (ingesta)</text>
+
+    <rect x="860" y="860" width="140" height="14" fill="#ffffff" opacity="0.85"/>
+    <text x="930" y="871" text-anchor="middle">consume (notifica)</text>
+  </g>
+
+  <!-- ARROWS: assumed existing ETL (gray dashed) -->
+  <g stroke="#64748b" stroke-width="1.5" fill="none" stroke-dasharray="2,3" marker-end="url(#arrow-gray)">
+    <path d="M540,710 C480,800 440,850 400,893"/>
+  </g>
+  <g font-size="10" fill="#64748b">
+    <rect x="430" y="780" width="200" height="14" fill="#ffffff" opacity="0.85"/>
+    <text x="530" y="791" text-anchor="middle">ETL / CDC ya existente (supuesto)</text>
+  </g>
+
+  <!-- LEGEND -->
+  <g font-size="11" fill="#334155">
+    <rect x="40" y="1005" width="1320" height="65" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+    <line x1="60" y1="1025" x2="100" y2="1025" stroke="#334155" stroke-width="2" marker-end="url(#arrow-dark)"/>
+    <text x="110" y="1029">Llamada síncrona (REST/HTTPS)</text>
+
+    <line x1="380" y1="1025" x2="420" y2="1025" stroke="#7e22ce" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow-purple)"/>
+    <text x="430" y="1029">Evento asíncrono (bus de mensajería)</text>
+
+    <line x1="780" y1="1025" x2="820" y2="1025" stroke="#b45309" stroke-width="1.5" stroke-dasharray="4,4" marker-end="url(#arrow-amber)"/>
+    <text x="830" y="1029">Validación de token (OIDC)</text>
+
+    <line x1="1080" y1="1025" x2="1120" y2="1025" stroke="#64748b" stroke-width="1.5" stroke-dasharray="2,3" marker-end="url(#arrow-gray)"/>
+    <text x="1130" y="1029">Integración por lote (supuesto)</text>
+
+    <text x="60" y="1055" font-size="10" fill="#64748b">Verde = componentes nuevos de Vista 360 · Azul = sistemas existentes · Naranja = capa de integración nueva · Morado = mensajería/analítica</text>
+  </g>
+</svg>
