@@ -55,8 +55,8 @@ curl http://localhost:3000/api/v1/estudiantes/1/materias \
 {
   "estudiante": { "id": 1, "codigo": "A00001", "nombre": "Ana Pérez" },
   "materias": [
-    { "materiaId": 1, "codigo": "COM101", "nombre": "Computación en Internet II", "creditos": 3, "periodo": "2026-2", "estado": "activa", "notaActual": 4.2 },
-    { "materiaId": 2, "codigo": "ARQ200", "nombre": "Arquitectura de Software", "creditos": 4, "periodo": "2026-2", "estado": "activa", "notaActual": null }
+    { "materiaId": 2, "codigo": "ARQ200", "nombre": "Arquitectura de Software", "creditos": 4, "periodo": "2026-2", "estado": "activa", "notaActual": null },
+    { "materiaId": 1, "codigo": "COM101", "nombre": "Computación en Internet II", "creditos": 3, "periodo": "2026-2", "estado": "activa", "notaActual": 4.2 }
   ]
 }
 ```
